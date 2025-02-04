@@ -1,34 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inkrementaalne arendusmudel</title>
-
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        a {
+            display: block;
+            margin-top: 10px;
+            color: #008CBA;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Inkrementaalne arendusmudel</h1>
-    <p>
-        Inkrementaalse arendusmudel on etapiviisiline ja ajagraafikut järgiv strateegia<br>
-        Kus süsteemi erinevaid osi arendatakse erinevatel aegadel ja erineva kiirusega<br>
-        ning kui üks osa valmis saab, integreeritakse see juba valmis süsteemiga<br>
-        Alternatiivne strateegia oleks kodeerida kõik süsteemi osad ja siis kogu kood integreerida ühekorraga<br>
-        Inkrementaalne arendusmudel algab sellega et kõigepealt määratakse nõuded üldisemal kujul ning <br>
-        nad jaotatakse tähtsamateks ja vähemtähtsamateks. Siis määratakse tarneosad mitme tarnena ja millest koosnevana klient oma tarkvara saama hakkab<br>
-        Tarne all mõeldakse süsteemi osa ehk inkrementi. Iga tarne peab lisama süsteemile kindla funktsionaalsuse.<br>
-        Sealjuures tootmist alustatakse kõrgema prioriteediga osadest. Kui süsteemi osad on määratud<br>
-        Võetakse ette 1.osa ja hakatakse seda detailiseerima, kasutades selleks sobivimat protsesse.<br>
-        Samaaegselt saab täpsustada teiste osade nõudeid, kuid töös oleva osa nõuded on külmutatud.<br>
-        Kui väga vaja pöördutakse selle osa juurde hiljem tagasi. Kui usa saab valmis, tarnitakse see <br>
-        kliendile, kes saab selle töösse rakendada. See aitab klindil täpsustada nõudeid järgmiste osade jaoks<br>
-        Seejärel võetakse käsile järgmine osa. Uued osad liidestatakse olemasoleva süsteemiga. Kõiki osi <br>
-        ei pea arendama sama protsessi kaudu.<br>
-        <img src="Inkrementaalne.jpeg" alt="Inkrementaalne arendusmudel">
-        <table>
 
-        </table>
-        Allikad:
-        <a href?="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1222_inkrementaalne_arendusmudel.html">EUCIP</a>
-    </p>    
+    <h1>Inkrementaalne arendusmudel</h1>
+
+    <p>
+        Inkrementaalne arendusmudel on etapiviisiline ja ajagraafikut järgiva strateegiaga lähenemine tarkvaraarendusele.
+        Selle mudeli puhul arendatakse süsteemi erinevaid osi eri aegadel ja erineva kiirusega.
+        Kui üks osa valmib, integreeritakse see juba olemasoleva süsteemiga.  
+    </p>
+
+    <p>
+        Alternatiivne strateegia oleks arendada kõik süsteemi osad valmis ning integreerida need korraga.
+        Inkrementaalne arendus algab üldiste nõuete määratlemisega, mille järel jagatakse need prioriteedi alusel tähtsamateks ja vähemtähtsamateks.  
+        Seejärel määratakse tarned – ehk süsteemi osad (inkremendid) –, mida klient järk-järgult kasutusse võtab.
+    </p>
+
+    <p>
+        Iga tarne peab lisama süsteemile kindla funktsionaalsuse, alustades tähtsaimatest osadest.
+        Kui esimene osa on valmis, hakatakse seda detailsemalt arendama ning teisi osi saab paralleelselt täpsustada.
+        Kui osa on valmis, tarnitakse see kliendile, kes saab seda kohe kasutada.  
+    </p>
+
+    <img src="Inkrementaalne.jpeg" alt="Inkrementaalne arendusmudel">
+
+    <h2>Tabel: Inkrementaalse mudeli plussid ja miinused</h2>
+    <table>
+        <tr>
+            <th>Plussid</th>
+            <th>Miinused</th>
+        </tr>
+        <tr>
+            <td>Võimaldab varajast tarkvara kasutamist</td>
+            <td>Nõuab pidevat planeerimist ja integreerimist</td>
+        </tr>
+        <tr>
+            <td>Võimaldab paremat tagasisidet ja muudatusi</td>
+            <td>Võib viia keeruka süsteemi arhitektuurini</td>
+        </tr>
+        <tr>
+            <td>Riskide vähendamine etapiviisilise arendusega</td>
+            <td>Võib nõuda rohkem ressursse pikaajaliselt</td>
+        </tr>
+    </table>
+
+    <h3>Allikad</h3>
+    <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1222_inkrementaalne_arendusmudel.html" target="_blank">
+        EUCIP - Inkrementaalne arendusmudel
+    </a>
+    <a href="https://chatgpt.com/" target="_blank">
+        ChatGPT
+    </a>
+
 </body>
 </html>
